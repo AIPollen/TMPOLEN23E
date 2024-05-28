@@ -1,0 +1,13 @@
+# Ignore finder files
+.DS_store
+
+# Ignore virtual environment folder
+.venv/
+
+#Ignore jpeg
+*.jpg
+*.jpeg
+
+# Ignore directory
+!*/
+
