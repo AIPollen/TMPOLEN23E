@@ -1,3 +1,5 @@
+# source: https://github.com/computervisioneng/image-classification-tensorflow-teachable-machine
+
 import os
 
 from keras.models import load_model  # TensorFlow is required for Keras to work
