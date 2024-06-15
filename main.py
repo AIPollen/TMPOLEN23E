@@ -1,10 +1,10 @@
 # source: https://github.com/computervisioneng/image-classification-tensorflow-teachable-machine
 
-#requirements
+#requirements check with pip show pillow
 # Pillow==9.5.0
 # numpy==1.23.5
-# keras==2.12.0
-# tensorflow==2.12.0
+# keras==2.12.0 is nu 2.13.1
+# tensorflow==2.12.0 is nu 2.13.0
 # scikit-learn==1.2.2
 
 import os
@@ -37,6 +37,7 @@ data = np.ndarray(shape=(1, 224, 224, 3), dtype=np.float32)
 predictions = []
 labels = []
 
+# root_dir to SSD resized images
 root_dir = '/Volumes/Pollen1/PollenTrainingssetsOnline/POLEN23/val/224'
 for dir_ in os.listdir(root_dir):
     for j in os.listdir(os.path.join(root_dir, dir_)):
