@@ -1,3 +1,12 @@
+# Calculations to check if GPU is used on M2
+# open activiteitenmonitor > venster > GPU geschiedenis
+# or stats
+
+# if not then install
+# pip install tensorflow
+# pip install tensorflow-macos
+# pip install tensorflow-metal
+
 import tensorflow as tf
 
 cifar = tf.keras.datasets.cifar100
