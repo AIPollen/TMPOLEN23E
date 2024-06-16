@@ -6,11 +6,12 @@ from keras.models import load_model
 from keras.preprocessing import image
 
 # Load the pre-trained model from the file
-model = load_model('Your Model Path')
+model = load_model('/Users/md/Developer/TMPOLEN23E/keras_model.h5')
 
 # Initialize the webcam
 cap = cv2.VideoCapture(0)
-class_labels=['Class 1','Class 2]
+class_labels=['Anadenanthera','Arecaceae','Arrabidaea','Cecropia','Chromolaena','Combretum','Croton
+,'Dipteryx','Eucalipto','Farmea','Hyptis','Mabea','Matayba','Mimosa','Myrcia','Protium','Qualea','Schinus','Senegalia','Serjania','Syagrus','Tridax','Urochloa']
 
 while True:
     # Capture a frame from the webcam
