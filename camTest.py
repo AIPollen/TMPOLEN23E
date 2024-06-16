@@ -15,6 +15,7 @@ class_labels=['Anadenanthera','Arecaceae','Arrabidaea','Cecropia','Chromolaena',
 while True:
     # Capture a frame from the webcam
     ret, frame = cap.read()
+    print(frame.shape)
     
     # Pre-process the frame for classification
     img = cv2.resize(frame, (224, 224))
@@ -35,7 +36,7 @@ while True:
     
     # Display the frame with the class label
     cv2.putText(frame, class_label, (10, 30), cv2.FONT_HERSHEY_COMPLEX,
-                1.0, (255, 255, 255), 3)
+                1.0, (0, 0, 255), 3)
     cv2.imshow('Webcam', frame)
     
     # Break the loop if the user presses 'q'
