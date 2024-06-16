@@ -50,7 +50,7 @@ while True:
                 1.0, (0, 0, 255), 3)
     cv2.imshow('Webcam', frame)
     
-    # Break the loop if the user presses 'q'
+    # Break the loop if the user presses 'q' when webcam window is active
     if cv2.waitKey(1) & 0xFF == ord('q'):
         break
 
